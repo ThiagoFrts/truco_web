@@ -41,8 +41,9 @@
 }
 
 .centro {
+   display: flex;
    justify-self: center;
    border: solid;
    height: 200px;
-   width: 200px;
+   gap: 10px;
 }
