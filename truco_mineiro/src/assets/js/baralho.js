@@ -1,3 +1,4 @@
+const manilha = ["7O", "AE", "7C", "4P"];
 const valores = ["4", "5", "6", "7", "Q", "J", "K", "A", "2", "3"];
 const naipes = ["P", "O", "E", "C"];
 
@@ -35,14 +36,12 @@ const jogadores = [
     }
 ]
 
-
-for (let i = baralho.length -1; i > 0; i--) {
+for (let i = baralho.length - 1; i > 0; i--) {
     let posicaoAleatoria = Math.floor(Math.random() * (i + 1));
     let temporaria = baralho[i];
     baralho[i] = baralho[posicaoAleatoria];
     baralho[posicaoAleatoria] = temporaria;
 }
-
 
 for (let i = 0; i < jogadores.length; i++) {
     for (let j = 0; j < 3; j++) {
@@ -50,6 +49,17 @@ for (let i = 0; i < jogadores.length; i++) {
         jogadores[i].cartas.push(cartas)
     }
 };
+
+function forca(carta) {
+    const id = `${carta.valor}${carta.naipe}`;
+    const posicao = manilha.indexOf(id);
+    
+    if (posicao !== -1) {
+        return posicao +  10;
+    }
+    return valores.indexOf(carta.valor); 
+}
+
 
 
 
