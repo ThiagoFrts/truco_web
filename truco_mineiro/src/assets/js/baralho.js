@@ -48,7 +48,7 @@ for (let i = 0; i < jogadores.length; i++) {
         let cartas = baralho.pop()
         jogadores[i].cartas.push(cartas)
     }
-};
+}
 
 function forca(carta) {
     const id = `${carta.valor}${carta.naipe}`;
