@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Truco Web: jogue Truco Mineiro contra o computador direto no navegador.">
+    <title>Truco Web — Truco Mineiro online</title>
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <link rel="stylesheet" href="src/assets/css/pages.css">
+</head>
+
+<body>
+    <header class="topo">
+        <a class="marca" href="index.html">
+            <span class="marca__icone" aria-hidden="true"></span>
+            <span class="marca__nome">Truco Web</span>
+        </a>
+        <nav aria-label="Principal">
+            <a href="index.html" aria-current="page">Início</a>
+            <a href="src/pages/jogar.html">Jogar</a>
+            <a href="src/pages/ranking.html">Ranking</a>
+            <a href="src/pages/entrar.html" class="nav-entrar">Entrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h1 class="entra" style="--i:1">Bora de <em>Truco</em> Mineiro? </h1>
+                <p class="lead entra" style="--i:2">
+                    Encare o computador em partidas de até 12 pontos, com manilhas e mãos fixas.
+                </p>
+                <div class="hero__acoes entra" style="--i:3">
+                    <a class="btn" href="src/pages/jogar.html">Jogar agora</a>
+                    <a class="btn btn--fantasma" href="src/pages/ranking.html">Ver ranking</a>
+                </div>
+            </div>
+
+            <div class="leque" role="img" aria-label="As quatro manilhas: sete de ouros, ás de espadas, sete de copas e quatro de paus">
+                <img src="src/assets/cards/svg/7O.svg" alt="">
+                <img src="src/assets/cards/svg/AE.svg" alt="">
+                <img src="src/assets/cards/svg/7C.svg" alt="">
+                <img src="src/assets/cards/svg/4P.svg" alt="">
+            </div>
+        </section>
+
+        <section class="secao">
+            <h2>Quem manda na mesa</h2>
+            <p class="secao__sub">A ordem das cartas no truco mineiro, da mais forte para a mais fraca.</p>
+
+            <div class="painel">
+                <div>
+                    <div class="manilhas">
+                        <figure class="manilha">
+                            <img src="src/assets/cards/svg/4P.svg" alt="Quatro de paus">
+                            <figcaption><strong>Zap</strong>4 de paus</figcaption>
+                        </figure>
+                        <figure class="manilha">
+                            <img src="src/assets/cards/svg/7C.svg" alt="Sete de copas">
+                            <figcaption><strong>Sete de copas</strong>2ª mais forte</figcaption>
+                        </figure>
+                        <figure class="manilha">
+                            <img src="src/assets/cards/svg/AE.svg" alt="Ás de espadas">
+                            <figcaption><strong>Espadilha</strong>Ás de espadas</figcaption>
+                        </figure>
+                        <figure class="manilha">
+                            <img src="src/assets/cards/svg/7O.svg" alt="Sete de ouros">
+                            <figcaption><strong>Sete de ouros</strong>7 de ouros</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Depois delas</h3>
+                    <div class="fichas" aria-label="3, 2, Ás, Rei, Valete, Dama, 7, 6, 5, 4">
+                        <span class="ficha ficha--ouro">3</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">2</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">A</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">K</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">J</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">Q</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">7</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">6</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">5</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">4</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Quanto vale a mão</h3>
+                    <div class="fichas" aria-label="Começa valendo 2, sobe para 4 com truco, depois 6, 10 e 12">
+                        <span class="ficha ficha--ouro">2</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">4</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">6</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">10</span><span class="fichas__seta" aria-hidden="true">›</span>
+                        <span class="ficha">12</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <span aria-hidden="true">♠ ♥ ♣ ♦</span><br>
+        Truco Web
+    </footer>
+</body>
+
+</html>
