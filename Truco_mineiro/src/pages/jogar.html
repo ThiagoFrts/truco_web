@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogar — Truco Web</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+
+<body>
+    <header class="topo">
+        <a class="marca" href="../../index.html">
+            <span class="marca__icone" aria-hidden="true"></span>
+            <span class="marca__nome">Truco Web</span>
+        </a>
+        <nav aria-label="Principal">
+            <a href="../../index.html">Início</a>
+            <a href="jogar.html" aria-current="page">Jogar</a>
+            <a href="ranking.html">Ranking</a>
+            <a href="entrar.html" class="nav-entrar">Entrar</a>
+        </nav>
+    </header>
+
+    <main class="pagina-simples">
+        <h1 class="entra" style="--i:0">Escolha a mesa</h1>
+
+        <div class="modos">
+            <a class="modo entra" style="--i:2" href="1v1.html">
+                <div class="modo__cartas" aria-hidden="true">
+                    <img src="../assets/cards/svg/4P.svg" alt="">
+                    <img src="../assets/cards/svg/verso.svg" alt="">
+                </div>
+                <span class="modo__tag">Disponível</span>
+                <h2>1v1</h2>
+                <p>Você contra o computador. Primeiro a chegar em 12 pontos leva a partida.</p>
+            </a>
+
+            <div class="modo modo--breve entra" style="--i:3" aria-disabled="true">
+                <div class="modo__cartas" aria-hidden="true">
+                    <img src="../assets/cards/svg/verso.svg" alt="">
+                    <img src="../assets/cards/svg/verso.svg" alt="">
+                    <img src="../assets/cards/svg/verso.svg" alt="">
+                    <img src="../assets/cards/svg/verso.svg" alt="">
+                </div>
+                <span class="modo__tag">Em breve</span>
+                <h2>2v2</h2>
+                <p>Em dupla, com parceiro. Ainda não está pronto.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <span aria-hidden="true">♠ ♥ ♣ ♦</span><br>
+        Truco Web — projeto didático
+    </footer>
+</body>
+
+</html>

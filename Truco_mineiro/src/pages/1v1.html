@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truco Mineiro — 1v1</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+</head>
+
+<body class="pagina-mesa">
+    <header class="topo">
+        <a class="marca" href="../../index.html">
+            <span class="marca__icone" aria-hidden="true"></span>
+            <span class="marca__nome">Truco Web</span>
+        </a>
+        <nav aria-label="Principal">
+            <a href="jogar.html">Sair da mesa</a>
+        </nav>
+    </header>
+
+    <main class="mesa">
+        <div id="placar">
+            <span><span class="placar__nome">Você</span><strong id="pontosJogador">0</strong></span>
+            <span><span class="placar__nome">Computador</span><strong id="pontosBot">0</strong></span>
+        </div>
+        <div id="baralho" aria-hidden="true"></div>
+        <div id="cartascomputador"></div>
+        <div class="centro"></div>
+        <div id="minhascartas"></div>
+    </main>
+
+    <script src="../assets/js/animacoes.js"></script>   
+    <script src="../assets/js/baralho.js"></script>
+    <script src="../assets/js/mesa.js"></script>
+</body>
+
+</html>
